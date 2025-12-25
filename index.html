@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas My Love</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <section id="screen1" class="screen active">
+            <p>For someone special</p>
+            <div class="gift-container" onclick="nextScreen(2)">
+                <span class="tap-me">Tap me!</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/1139/1139982.png" alt="Gift" class="gift-icon">
+            </div>
+        </section>
+
+        <section id="screen2" class="screen">
+            <img src="https://cdn-icons-png.flaticon.com/512/2334/2334757.png" alt="Snowman" class="snowman-icon">
+            <h2>This Christmas, something special for you</h2>
+            <button onclick="nextScreen(3)">Open it</button>
+        </section>
+
+        <section id="screen3" class="screen">
+            <h3>Just for you</h3>
+            <p>I don't need a gift, because...</p>
+            <div class="card-grid">
+                <div class="card" onclick="revealCard(this)">❤️<span>You</span></div>
+                <div class="card" onclick="revealCard(this)">❤️<span>Are</span></div>
+                <div class="card" onclick="revealCard(this)">❤️<span>My</span></div>
+                <div class="card" onclick="revealCard(this)">❤️<span>Cutest</span></div>
+                <div class="card" onclick="revealCard(this)">❤️<span>Gift 🎁</span></div>
+            </div>
+            <button id="final-btn" class="hidden" onclick="nextScreen(4)">Next</button>
+        </section>
+
+        <section id="screen4" class="screen">
+            <h2>Merry Christmas to my Cutiepie</h2>
+            <div class="letter-box">
+                <p>To my favorite person,</p>
+                <p>This Christmas, I just want you to know how special you are to me. You aren't just a part of my life, you are the reason behind so many smiles.</p>
+                <p>I love you forever! ❤️</p>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
